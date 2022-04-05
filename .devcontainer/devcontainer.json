@@ -10,4 +10,5 @@
     "source=${localEnv:HOME}${localEnv:USERPROFILE}/.config,target=/root/.config,type=bind,consistency=cached",
     "source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/root/.ssh,type=bind,consistency=cached"
 ],
+"extensions": ["ms-toolsai.jupyter-keymap", "ms-python.python"]
 }
