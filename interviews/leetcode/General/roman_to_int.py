@@ -20,8 +20,7 @@
 
 class Solution:
     def romanToInt(self, s: str) -> int:
-        legend = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500,
-                  'M': 1000}
+        legend = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
         input = []
         counter = []
 
@@ -31,23 +30,23 @@ class Solution:
         passer = False
         for i, c in enumerate(input):
 
-            if (i < len(input)-1) and passer is False:
-                if input[i] + input[i + 1] == 'IV':
+            if (i < len(input) - 1) and passer is False:
+                if input[i] + input[i + 1] == "IV":
                     value = 4
                     passer = True
-                elif input[i] + input[i + 1] == 'IX':
+                elif input[i] + input[i + 1] == "IX":
                     value = 9
                     passer = True
-                elif input[i] + input[i + 1] == 'XL':
+                elif input[i] + input[i + 1] == "XL":
                     value = 40
                     passer = True
-                elif input[i] + input[i + 1] == 'XC':
+                elif input[i] + input[i + 1] == "XC":
                     value = 90
                     passer = True
-                elif input[i] + input[i + 1] == 'CD':
+                elif input[i] + input[i + 1] == "CD":
                     value = 400
                     passer = True
-                elif input[i] + input[i + 1] == 'CM':
+                elif input[i] + input[i + 1] == "CM":
                     value = 900
                     passer = True
                 else:

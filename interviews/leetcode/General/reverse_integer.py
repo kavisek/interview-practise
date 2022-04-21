@@ -16,7 +16,7 @@ class Solution:
             x_length = len(x)
             x = x[x_length::-1]
             x = x[:-1]
-            x = '-' + x
+            x = "-" + x
             x = int(x)
             if x < -(2**31):
                 return 0
